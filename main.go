@@ -24,16 +24,25 @@ func main() {
 
 	fmt.Println(controller.AlumnoArray)
 
-	controller.AgregarCurso("matematica")
-	controller.AgregarCurso("literatura")
+	controller.AgregarCurso("Matematica")
+	controller.AgregarCurso("Literatura")
+	controller.AgregarCurso("Ingles")
 
 	fmt.Println(controller.CursoArray)
 
-	s := controller.Curso{}
-	s.AgregarAlumnoACurso(alumno2, "matematica")
-	s.AgregarAlumnoACurso(alumno1, "matematica")
-	s.AgregarAlumnoACurso(alumno3, "matematica")
-	s.AgregarAlumnoACurso(alumno2, "literatura")
+	controller.AgregarAlumnoACurso(alumno4, "Matematica")
+	controller.AgregarAlumnoACurso(alumno2, "Matematica")
+	controller.AgregarAlumnoACurso(alumno1, "Matematica")
+
+	fmt.Println(controller.CursoArray)
+
+	controller.AgregarAlumnoACurso(alumno5, "Literatura")
+	controller.AgregarAlumnoACurso(alumno3, "Literatura")
+
+	fmt.Println(controller.CursoArray)
+
+	controller.AgregarAlumnoACurso(alumno2, "Ingles")
+	controller.AgregarAlumnoACurso(alumno2, "Ingles")
 
 	fmt.Println(controller.CursoArray)
 

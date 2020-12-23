@@ -40,7 +40,6 @@ func DeleteAlumno(dni int32) {
 	if ifExist == true {
 		for i := 0; i < len(AlumnoArray); i++ {
 			if AlumnoArray[i].dni == dni {
-				fmt.Println(i)
 				AlumnoArray = append(AlumnoArray[:i], AlumnoArray[i+1:]...)
 			}
 		}
@@ -48,7 +47,6 @@ func DeleteAlumno(dni int32) {
 		fmt.Println("No se encontro un alumno con ese DNI")
 
 	}
-
 }
 
 func IfExistByDni(dni int32) bool {
